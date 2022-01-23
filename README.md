@@ -1,15 +1,15 @@
 # EPITA gestion etudiants 
 
-Voir demo du projet ici: http://epitagestetud.herokuapp.com/
+Voir demo du projet ici: 
 les identifiants tests crees sont:
 **identifiant admin**: ```root```
 **identifiant professeur**: ```gaye```
 **identifiant etudiant**: ```ian```
 **Tous les mots de passes sont:**: ```qwertyuiop0```
 
-**Projet Epita Dakar du cours de python**
+**Projet APPLICATION WEB LUCAS du cours de CLOUD COMPUTING**
 
-Pour tester le projet localement il faut le cloner avec ```git clone https://github.com/capinho/djangoEpita.git```
+Pour tester le projet localement il faut le cloner avec ```git clone https://github.com/kajun04/Django_lucas.git```
 
 Ce projet utilise la version 3.7 de python et 3.0 de django 
 veuiller creer un environnement virtuel pour ne pas interferer avec vos autres projets python voir document sur windows >>https://docs.python.org/fr/3/library/venv.html
@@ -30,4 +30,5 @@ pour creer un superutilisateur faite un ``` python manage.py createsuperuser```
 Ensuite connectez-vous avec cet identifiant vous pourrez de la creer les etudiants et les professeur 
 
 
+# Django_lucas
 # Django_lucas
