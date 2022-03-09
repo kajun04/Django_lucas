@@ -23,10 +23,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '!!fum%*$(y_w$-j-sjl=wd&qy+_%phky6rueji4xqye8)3#^&k'
+SECRET_KEY = '#kgq#22c#p-&acom4fd=yygppoh#gj_$fbt$@%vev%p#md^js'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost','*']
 
@@ -82,19 +82,19 @@ WSGI_APPLICATION = 'ARMS.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
-
 '''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
-}
-'''
+}'''
+
 DATABASES = {
     "default": dj_database_url.config(
-        default="postgres://postgres:arms@localhost:5432/arms", conn_max_age=600
+        default="postgres://kuofufvbdvwgcu:d59f1087e33d85c4c7e1bc3af788ad5b7faef2876d906f1187b244229260e537@ec2-3-227-15-75.compute-1.amazonaws.com:5432/defomedpbh987n", conn_max_age=600
     )
 }
+
 
 
 # Password validation
@@ -134,7 +134,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATIC_URL = '/static/'
 
@@ -155,4 +155,4 @@ TEMPLATES[0]['OPTIONS']['context_processors'].append("result.context_processors.
 TEMPLATES[0]['OPTIONS']['context_processors'].append("result.context_processors.session_processor")
 
 
-django_heroku.settings(locals()) 
+#django_heroku.settings(locals()) 
